@@ -1,0 +1,17 @@
+{
+  "name": "koa_survey",
+  "version": "0.0.1",
+  "authors": [
+    "courington <chase.courington@gmail.com>"
+  ],
+  "description": "koa survey app",
+  "main": "app.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

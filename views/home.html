@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block title %}koa vote{% endblock %}
+
+{% block content %}
+    <h1>current polls</h1>
+
+    <div class="row">
+        {% for question in questions %}
+        <div class="col-xs-6">
+            <h4>{{ question.title }}</h4>
+            <a href="vote?questionId={{ question._id.toString() }}" class="btn btn-info btn-xs" role="button">Vote Here</a>
+            <a href="/question/{{ question._id.toString() }}" class="btn btn-info btn-xs">Update here</a>
+        </div>
+        {% endfor %}
+    </div>
+    <br>
+    <a href="/question" class="btn btn-primary btn-lg" role="button">Create new question</a>
+{% endblock %}

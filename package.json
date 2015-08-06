@@ -1,0 +1,29 @@
+{
+  "name": "dd_example",
+  "version": "0.0.1",
+  "description": "develop denver example koa app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node --harmony app.js",
+    "test": "./node_modules/mocha/bin/mocha --harmony-generators -u bdd -R spec",
+    "intern": "intern-runner config=tests/intern"
+  },
+  "author": "@courington",
+  "license": "MIT",
+  "dependencies": {
+    "co-body": "^1.1.0",
+    "co-monk": "^1.0.0",
+    "co-views": "^0.3.0",
+    "koa": "^0.18.1",
+    "koa-route": "^2.4.0",
+    "koa-static": "^1.4.9",
+    "monk": "^1.0.1",
+    "swig": "^1.4.2"
+  },
+  "devDependencies": {
+    "co": "^4.5.1",
+    "mocha": "^2.2.1",
+    "should": "^5.2.0",
+    "supertest": "^0.15.0"
+  }
+}
